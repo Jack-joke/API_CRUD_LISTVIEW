@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvFirstName"
+        android:paddingLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="4dp"
+        android:textColor="#209702"
+        android:text="First name"
+        android:textSize="@dimen/fontsize" />
+
+    <TextView
+        android:id="@+id/tvLastName"
+        android:paddingTop="5dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/tvFirstName"
+        android:layout_marginLeft="10dp"
+        android:text="Last name"
+        android:textColor="#209702"
+        android:textSize="@dimen/fontsize" />
+
+    <TextView
+        android:id="@+id/tvGender"
+        android:paddingLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_below="@+id/tvFirstName"
+        android:text="Gender"
+        android:textColor="#1735EE"
+        android:textSize="@dimen/fontsize" />
+
+    <TextView
+        android:id="@+id/tvSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@+id/tvFirstName"
+        android:layout_toEndOf="@+id/tvGender"
+        android:text="Salary"
+        android:textColor="#E22D14"
+        android:textSize="@dimen/fontsize" />
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="250dp"
+        android:id="@+id/imgEdit"
+        android:src="@drawable/edit"
+        android:layout_width="@dimen/iconsize"
+        android:layout_height="@dimen/iconsize" />
+
+    <ImageView
+        android:id="@+id/imgDelete"
+        android:layout_width="@dimen/iconsize"
+        android:layout_height="@dimen/iconsize"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="300dp"
+        android:src="@drawable/delete" />
+
+
+</RelativeLayout>
